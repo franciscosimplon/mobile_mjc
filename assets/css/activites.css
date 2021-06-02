@@ -1,0 +1,65 @@
+*{
+    font-family: "MaPolice-regular";
+}
+
+/* ---------------------------------------------------------
+--------------           ACTIVITÉS           ---------------
+----------------------------------------------------------*/
+
+/*------------------------------ 
+---------- ARTICLE -------------
+----------------------------- */
+
+.article_activites{
+    padding: 2vh;
+}
+
+.h1_activites, .h2_activites, .div_activites{
+    text-align: center;
+}
+
+.h1_activites{
+    font-size: 3vh;
+}
+
+.h2_activites{
+    font-size: 2vh;
+}
+
+.a_activites{
+    text-decoration: none;
+    color: black;
+}
+
+.div_activites{
+    height: 35vh;
+    width: 35vh;
+    margin : 2vh auto;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15%;
+}
+
+.text_activites{
+    margin : 3vh 0vh;
+    padding : 0% 3vh;
+}
+
+.image_activites{
+    margin-top: 2vh;
+    width: 50%;
+    height: 50%;
+}
+
+/*------------------------------ 
+---------- FOOTER --------------
+----------------------------- */
+
+footer p {
+    margin : 2% 5%;
+    text-align: center;
+    font-size: 1.2vh;
+}
+
+
+

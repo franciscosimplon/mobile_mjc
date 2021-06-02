@@ -1,0 +1,76 @@
+/* Couleur de fond */
+
+.bgColorLightPink{
+    background-color: #D6859E;
+}
+
+.bgColorDarkPink{
+    background-color: #C93364;
+}
+.bgColorLightGreen{
+    background-color: #7DB7A3;
+}
+.bgColorDarkGreen{
+    background-color: #3C963E;
+}
+.bgColorBrown{
+    background-color: #672C2A;
+}
+.bgColorYellow{
+    background-color: #DF8B19;
+}
+.bgColorBlue{
+    background-color: #3696A1;
+}
+
+/* Couleur de police */
+
+.colorPoliceBlack {    
+    color : black;
+}
+
+.colorPoliceWhite{
+    color : white;
+}
+
+.colorPolicePink {
+    color : #C93364;
+}
+
+.colorPoliceLightPink {
+    color : #D6859E;
+}
+
+.colorPoliceLightGreen {
+    color : #7DB7A3;
+}
+
+@font-face{
+    font-family: "MaPolice-black";
+    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-Black.ttf) format('truetype');
+}
+@font-face{
+    font-family: "MaPolice-italic";
+    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
+}
+
+@font-face{
+    font-family: "MaPolice-regular";
+    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.boxShadow {
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25) ;
+}
+
+.boxShadow1 {
+    box-shadow: 0px 2px 5px #7DB7A3 ;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */

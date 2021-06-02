@@ -1,0 +1,54 @@
+@font-face{
+    font-family: "MaPolice-regular";
+    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
+}
+body{
+    text-align:center;
+    font-family: "MaPolice-regular";
+}
+h1{
+    display: inline-block;
+    margin:auto;
+    margin-top:10%;
+    border-bottom: 1px solid #6B5555;
+}
+/*----------Cadre----------*/
+main, form{
+    margin:8%;
+    padding-top: 5%;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+/*__________________________________________________*/
+h4, input{
+    color: #C93364;
+}
+footer{
+    width:80%;
+    margin: auto;
+}
+button{
+    display: block;
+    margin:5% auto 5% auto;
+    padding:5%;
+    border-radius: 25px;
+    width: 100%;
+    border:none;
+    outline: none;
+}
+#close{
+    position: absolute;
+    top:0;
+    right: 0;
+    
+}
+.whiteButton{
+    background-color: #FFFFFF;
+}
+.blackButton{
+    background-color: #000000;
+    color:#FFFFFF;
+}

@@ -1,0 +1,129 @@
+#close{
+    position: absolute;
+    top:0;
+    right: 0;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    font-family: "MaPolice-regular";
+}
+
+h1{
+    grid-area: 1 / 1 / 2 / 2;
+    margin: auto;
+    margin-top: 15vh;
+    border-bottom: 1px solid black;
+    padding-bottom: 2vh;
+    font-size: 5vh;
+}
+
+/* ----------------------------------------------------------------------
+----                           CARRÉ BLANC                           ----
+-----------------------------------------------------------------------*/
+
+section{
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    height: 50vh;
+    grid-template-rows: repeat(2, 15vh) 4vh 8vh 8vh;
+    margin: auto 10vw;
+    background-color: white;
+    border-radius: 5vh;
+}
+
+section div{
+    margin: auto;
+    border: 5px rgb(196, 0, 33);
+
+}
+
+/* ----------------------------------------------
+----            Nom d'utilisateur            ----
+-----------------------------------------------*/
+
+#username {
+    height: 5vh;
+    width: 24vh;
+    text-align: center;
+    font-family: "MaPolice-regular";
+    border: 3px solid #C93364 ;
+    font-size: 2vh;
+}
+
+/* ----------------------------------------------
+----              Mot de Passe               ----
+-----------------------------------------------*/
+.mdp{
+    border: 3px solid #C93364 ;
+    display: flex;
+}
+
+#password{
+    height: 5vh;
+    width: 20.5vh;
+    text-align: center;
+    font-family: "MaPolice-regular";
+    border : none;
+    margin:auto;
+    font-size: 2vh;
+}
+
+#eye{
+    border: none;
+    background-color: white;
+    margin-right: 0.5vh;
+}
+
+/* Class affectée avec du JS */
+.imgEye{
+    width: 3vh;
+}
+
+/* ----------------------------------------------
+----         Connexion / S'inscrire          ----
+-----------------------------------------------*/
+
+.connexion, .inscription{
+    margin: auto;
+    height: 5vh;
+    width: 60vw;
+    border-radius: 10vh;
+    font-family: "MaPolice-regular";
+    font-size: 2.5vh;
+}
+
+.connexion {
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.Aconnexion{
+    color: white;
+    text-decoration: none;
+}
+
+.inscription{
+    grid-area: 5 / 1 / 6 / 2;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.Ainscription{
+    text-decoration: none;
+    color: black
+}
+
+/* ----------------------------------------------
+----                 CSS Commun              ----
+-----------------------------------------------*/
+
+#password:focus, #username:focus, #eye:focus, .inscription:focus, .connexion:focus{
+    outline: none;
+}

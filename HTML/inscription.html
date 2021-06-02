@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Préinscription</title>
+    <link rel="stylesheet" href="../assets/css/stylegp.css" />
+    <link rel="stylesheet" href="../assets/css/inscription.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body class="bgColorLightPink">
+    <h1>Préinscription</h1>
+    <form method="post" action="traitement.php" class="boxShadow">
+        <input type="text" id="username" placeholder="Nom d'utilisateur" onclick="" />
+        <input type="email" id="email" placeholder="E-Mail" onclick="" />
+        <input type="text" id="password1" placeholder="Mot de passe" onclick="hidePassword1()" />
+        <input type="text" id="password2" placeholder="Confirmer Mot de Passe" onclick="hidePassword2()" />
+        <footer>
+            <button class="boxShadow blackButton">Se Préinscrire</button>
+        </footer>
+    </form>
+    <a href="../accueil.html"><i id="close" class="material-icons">close</i></a>
+    <script src="../assets/js/inscription.js"></script>
+</body>
+
+</html>

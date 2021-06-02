@@ -1,0 +1,21 @@
+form{
+    justify-content: space-between;
+}
+input{
+    border: 2px solid #C93364;
+    flex:1;
+    margin: 10% 0 10% 0;
+    text-align: center;
+    font-weight: bold;
+    margin-left:  5%;
+    margin-right:  5%;
+}
+footer{
+    flex:1;
+    text-align: left;
+}
+@media (max-height: 590px) {
+    form{
+      overflow: scroll;
+    }
+  }

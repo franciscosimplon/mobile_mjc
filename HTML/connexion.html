@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/connexion.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Connexion</title>
+</head>
+<body class="bgColorLightPink">
+<h1>CONNEXION</h1>
+<section>
+    <div>
+       <input type="text" id="username" placeholder="Nom d'utilisateur" required="required">
+    </div>
+    <div class="mdp">
+            <input type="password" id="password" placeholder="Mot de passe" required="required">
+            <button type="button" id="eye" onclick="changeImage()">
+            </button>
+    </div>
+    <button type="button" class="connexion" onclick="valider()"><a class="Aconnexion" href="./profil.html">Connexion</a></button>
+    <button type="button" class="inscription"><a class="Ainscription" href="./pre-inscription.html">S'inscrire</a></button>
+</section>
+<a href="javascript:history.back()"><i id="close" class="material-icons">close</i></a>
+<script src="../assets/js/connexion.js"></script>
+</body>
+</html>

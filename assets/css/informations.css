@@ -1,0 +1,95 @@
+body{
+    font-family: "MaPolice-regular";
+    color: white;
+    font-size: 1.6vh;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-rows: 15vh 35vh 10vh 10vh 30vh;
+}
+
+/* ---------------------------------------------------------
+--------------           HEADER           ------------------
+----------------------------------------------------------*/
+
+#close{
+    color: white;
+    position: absolute;
+    font-size: 3vh;
+    top:0;
+    right: 0;
+}
+
+header{
+    grid-area: 1 / 2 / 2 / 3;  
+    margin-top: 5vh ;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.material-icons.md-30{
+    font-size: 6vh;
+    margin: 0vh 3vh;
+}
+
+/* ---------------------------------------------------------
+--------------              DIV           ------------------
+----------------------------------------------------------*/
+
+/*------------------------------ 
+---------- HORAIRES ------------
+----------------------------- */
+
+.horaire{
+    grid-area: 2 / 2 / 3 / 3;
+    margin-top: 3vh;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.horaire-titre{
+    margin: 0vh 2vh 5vh 2vh;
+}
+
+.horaire-jour{
+    margin: 2vh 2vh 1vh 2vh;
+    font-weight: bold;
+}
+
+.horaire-heures{
+    margin: 0vh 2vh 3.5vh 2vh;
+}
+
+/*------------------------------ 
+---------- HORAIRES ------------
+----------------------------- */
+
+.reseaux{
+    grid-area: 3 / 2 / 4 / 3 ;
+    margin-top: 2vh;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+/*------------------------------ 
+---------- HORAIRES ------------
+----------------------------- */
+
+.adresse{
+    grid-area: 4 / 2 / 5 / 3;
+    margin: auto;
+    text-align: center;
+}
+
+.adresse p{
+    padding-top: 0.5vh;
+}
+
+/* ---------------------------------------------------------
+--------------           FOOTER           ------------------
+----------------------------------------------------------*/
+
+footer{
+    grid-area: 5 / 2 / 6 / 3;
+}

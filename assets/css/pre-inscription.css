@@ -1,0 +1,68 @@
+#close{
+    position: absolute;
+    top:0;
+    right: 0;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    font-family: "MaPolice-regular";
+}
+
+h1{
+    grid-area: 1 / 1 / 2 / 2;
+    margin: auto;
+    margin-top: 15vh;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid black;
+    padding-bottom: 2vh;
+    font-size: 5vh;
+}
+
+section{
+    grid-area: 2 / 1;
+    display: grid;
+    height: 60vh;
+    grid-template-rows: repeat(6, 10vh);
+    margin: auto 10vw;
+    background-color: white;
+    border-radius: 5vh;
+}
+
+section div{
+    margin: auto;
+    border: 5px rgb(196, 0, 33);
+}
+
+
+#username, #password, #mail, #cpassword{
+    height: 5vh;
+    width: 50vw;
+    text-align: center;
+    font-family: "MaPolice-regular";
+    border: 3px solid #C93364 ;
+    font-size: 2vh;
+}
+
+button{
+    margin: auto;
+    height: 5vh;
+    width: 60vw;
+    border-radius: 10vh;
+    font-family: "MaPolice-regular";
+    font-size: 2.5vh;
+    background-color: black;
+}
+
+.inscrire{
+    grid-area: 6 / 1 / 6 / 2;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+}

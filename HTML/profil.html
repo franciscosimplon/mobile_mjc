@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="../assets/css/stylegp.css">
+    <link rel="stylesheet" href="../assets/css/profil.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="bgColorLightPink">
+    <h1>Profil</h1>
+    <main class="boxShadow">
+        <img src="../assets/images/photodeprofil.jpeg" alt="PhotoDeProfil" class="boxShadow">
+        <!--Début d'un component-->
+        <section>
+            <h4>Prénom</h4>
+            <article>
+                <p id="prenom">Pierre</p>
+                <!-- <i class="material-icons" onclick="editModePrenom()">edit</i> -->
+                <i class="material-icons" onclick="editOpenClose(0)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(0, 'prenom')"></input>
+                    <!-- <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okClosePrenom()"></input> -->
+                </div>
+            </article>
+        </section>
+        <!--Fin du component-->
+        <p></p>
+        <section>
+            <h4>Nom</h4>
+            <article>
+                <p id="nom">Dupont</p>
+                <i class="material-icons" onclick="editOpenClose(1)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(1, 'nom')"></input>
+                </div>
+            </article>
+        </section>
+        <p></p>
+        <section>
+            <h4>Date de Naissance</h4>
+            <article>
+                <p id="date">01/01/19..</p>
+                <i class="material-icons" onclick="editOpenClose(2)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="date" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(2, 'date')"></input>
+                </div>
+            </article>
+        </section>
+        <p></p>
+        <section>
+            <h4>Adresse</h4>
+            <article>
+                <p id="adresse">? Rue des ...</p>
+                <i class="material-icons" onclick="editOpenClose(3)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(3, 'adresse')"></input>
+                </div>
+            </article>
+        </section>
+        <p></p>
+        <section>
+            <h4>Numéro</h4>
+            <article>
+                <p id="numero">06.00...</p>
+                <i class="material-icons" onclick="editOpenClose(4)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="tel" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(4, 'numero')"></input>
+                </div>
+            </article>
+        </section>
+        <p></p>
+        <section>
+            <h4>E-Mail</h4>
+            <article>
+                <p id="email">...@gmail.com</p>
+                <i class="material-icons" onclick="editOpenClose(5)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="email" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(5, 'email')"></input>
+                </div>
+            </article>
+        </section>
+        <p></p>
+        <section>
+            <h4>Profession</h4>
+            <article>
+                <p id="metier">Profession</p>
+                <i class="material-icons" onclick="editOpenClose(6)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                    onclick="editOpenClose(6, 'metier')"></input>
+                </div>
+            </article>
+        </section>
+        <p></p>
+        <section id="addActi">
+            <h4>Activités</h4>
+            <article>
+                <p id="activites">Activités</p>
+                <i class="material-icons" onclick="editOpenClose(7)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <select name="menuActi" id="dataListActi" class="bgColorLightPink  textEdit editContent">
+                        <option value="select">Select</option>
+                        <optgroup label="Bien Etre">
+                            <option value="Yoga">Yoga</option>
+                            <option value="Naturopathie">Naturopathie</option>
+                        </optgroup>
+                        <optgroup label="Dance">
+                            <option value="Hip-Hop">Hip-Hop</option>
+                            <option value="Breakdance">Breakdance</option>
+                        </optgroup>
+                    </select>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                    onclick="editOpenClose(7, 'activites')"></input>
+                </div>
+            </article>
+            <!-- <div class="add">
+                <i class="material-icons" onclick="newActi()">add</i>
+            </div> -->
+        </section>
+        <p></p>
+        <footer>
+            <button class="boxShadow whiteButton">Mes Documents</button>
+            <!-- <button class="boxShadow blackButton">Supprimer Compte</button> -->
+        </footer>
+        <a href="../index.html"><i id="close" class="material-icons">close</i></a>
+        <script src="../assets/js/profil.js"></script>
+    </main>
+</body>
+
+</html>

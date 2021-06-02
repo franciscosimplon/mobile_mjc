@@ -1,0 +1,119 @@
+
+/* ---------------------------------------------------------
+--------------           HEADER           ------------------
+----------------------------------------------------------*/
+
+header{
+    background-image: url(../images/Accueil1.png);
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45vw 10vw 45vw;
+}
+
+/*------------------------------ 
+----------- ASIDE --------------
+----------------------------- */
+
+aside a {
+    position: fixed;
+    right: 0; 
+    border-radius: 50% 0 0 50%;
+    width: 7vh;
+    height: 7vh;
+    z-index: 1;
+    text-decoration: none;
+}
+
+aside a:nth-child(1), aside a:nth-child(3){
+    background-color: rgb(255, 255, 255);
+}
+
+aside a:nth-child(1){
+    bottom: 38vh;
+}
+
+aside a:nth-child(2){
+    bottom: 30vh;
+    background-color: black;
+}
+
+aside a:nth-child(3){
+    bottom: 22vh;
+}
+
+.material-icons.md-30 { 
+    display: block;
+    font-size: 4vh; 
+}
+
+.icon1{
+    margin : 1.7vh 0vh 0vh 1.7vh;
+}
+
+/*------------------------------ 
+---------- SCROLL --------------
+----------------------------- */
+
+.scroll{
+    grid-area: 1 / 2 / 2 / 3;
+    margin : 75vh auto 0vh auto;
+    border: solid 2px rgb(255, 255, 255);
+    height: 8vh;
+    border-radius: 50px;
+}
+
+.scroll_child{
+    margin-top: 3vh;
+    width: 3.5vh;
+    animation: bounce 0.8s ease infinite;
+}
+
+/*------------------------------ 
+---------- FOOTER --------------
+----------------------------- */
+
+.footer_accueil{
+    position :absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    text-align: center;
+}
+
+.footer_accueil a:nth-child(1){
+    grid-column: 1;
+}
+
+.footer_accueil a{
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 3vw;
+    padding-bottom: 0.6vh;
+}
+
+.material-icons.md-34 { 
+    display: block;
+    font-size: 5vh; 
+}
+
+.icon2{
+    margin: 0.5vh auto;
+}
+
+.selection{
+    background-color: white;
+    color: #D6859E;
+}
+
+/* ---------------------------------------------------------
+--------------           KEY FRAMES          ---------------
+----------------------------------------------------------*/
+
+@keyframes bounce{
+    from {transform: translateY(0);}
+     to  {transform: translateY(-2vh);}
+}
+
+
